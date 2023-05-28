@@ -1,0 +1,223 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    height: 50px;
+    background-color: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* выравниваем элементы */
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none; /* Убираем точки маркировки */
+}
+
+.menu .menu_link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 40px;
+}
+
+.subheader {
+    height: 84px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position:absolute;
+}
+
+.subheader .subheader_logo {
+    display: block; /* Ссылка это строчный элемент и нужен блок, чтобы работали margin */
+    max-width: 100%; /* Устанавливаем макс ширину логотипа, чтобы при смене логотипа он не съезжал */
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    opacity: 0.6;
+    font-size: 13px;
+    font-weight: 400;
+    color:#ffffff;
+
+    margin-top: 6px;
+}
+
+.subheader .subheader_call {
+    margin-top: 19px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: right;
+    line-height: 12px;
+    color:#FFFFFF;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color:#FFFFFF;
+
+    width: 162px;
+    height: 46px;
+
+    background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    /* border:none; */
+    border-radius: 4px;
+}
+
+.promo {
+    min-height: 800px;
+    background: url(../img/uber_bg.png) center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+
+.promo .promo_header {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.promo .promo_subheader {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.promo .promo_btn {
+    display:block;
+    font-weight: 400;
+    font-size: 18px;
+
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 115px;
+
+    width: 259px;
+    height: 63px;
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.promo_second {
+    padding: 18px 0 64px 0;
+    background: #FFFFFF;
+}
+
+.promo_second .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.promo_second .img_reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+}
+
+.promo_second .reasons_block .reasons_descr {
+    width: 343px;
+}
+
+.promo_second .promo_header {
+    display:block;
+    width: 115px;
+    height: 27px;
+    margin: 0 auto;
+    background: #000000;
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.promo_second .promo_subheader {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #222222;
+}
+
+.promo_second .promo_header_desc {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    /* or 124% */
+
+    color: #1EACC7;
+}
+
+.promo_second .promo_descr {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #202020;
+}
