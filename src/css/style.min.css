@@ -7,8 +7,12 @@ header {
 }
 
 nav {
+  display: block;
   height: 50px;
   background-color: #212121;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .hamburger {
@@ -715,6 +719,9 @@ footer .footer_wrapper .footer_mobile img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .promo_second .reasons_block .img_reasons {
+    margin-right: 0;
+  }
   .promo_second .reasons_block .reasons_descr {
     margin-top: 20px;
   }
@@ -1002,7 +1009,7 @@ footer .footer_wrapper .footer_mobile img {
     margin-bottom: 20px;
   }
   .globe {
-    height: 544px;
+    min-height: 544px;
   }
   .globe .world {
     min-height: 544px;
@@ -1080,5 +1087,270 @@ footer .footer_wrapper .footer_mobile img {
     -ms-flex-item-align: center;
         align-self: center;
     margin-top: 24px;
+  }
+}
+@media (max-width: 575px) {
+  nav {
+    height: 30px;
+  }
+  header {
+    height: 30px;
+  }
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400;
+    font-transform: uppercase;
+    margin-top: 11px;
+  }
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  .promo {
+    min-height: 400px;
+    padding: 73px 0 35px 0;
+  }
+  .promo_header {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 0 24px;
+    margin-top: 28px;
+  }
+  .promo_subheader {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 23px;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    font-size: 16px;
+  }
+  .menu {
+    width: 85%;
+  }
+  .promo_second {
+    padding: 22px 0 36px 0;
+  }
+  .promo_second .title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+  .promo_second .reasons_block {
+    margin-top: 26px;
+  }
+  .promo_second .reasons_block .img_reasons {
+    width: 100px;
+    height: 100px;
+  }
+  .promo_second .reasons_block .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  .promo_second .reasons_block .reasons_descr .promo_header_desc {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .promo_second .reasons_block .reasons_descr .promo_second_descr {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-top: 6px;
+  }
+  .mobile {
+    height: 1889px;
+    padding: 36px 0 42px 0;
+  }
+  .mobile .row {
+    margin-top: 0;
+  }
+  .mobile .label {
+    width: 112px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .mobile .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .mobile .subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 9px;
+    margin-bottom: 27px;
+  }
+  .mobile .mobile_item {
+    width: 290px;
+    height: 254px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .mobile .mobile_item_subtitle {
+    font-size: 17px;
+    line-height: 31px;
+    padding: 80px 47px 0 47px;
+    margin-top: 0;
+  }
+  .mobile .mobile_item_plus {
+    width: 29px;
+    height: 29px;
+  }
+  .mobile .mobile_item_plus::before {
+    width: 14px;
+    height: 2px;
+  }
+  .mobile .mobile_item_plus::after {
+    width: 2px;
+    height: 14px;
+  }
+  .choice {
+    min-height: 393px;
+    padding: 27px 0 24px 0;
+  }
+  .choice .black {
+    height: 393px;
+  }
+  .choice .label_white {
+    width: 112px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .choice_img {
+    width: 300px;
+    height: 190px;
+    margin-top: 34px;
+  }
+  .choice_descr {
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 23px;
+  }
+  .require {
+    min-height: 960px;
+    padding: 22px 0 0 0;
+  }
+  .require .label {
+    width: 112px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .require .title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+  .require_block {
+    margin-top: 0;
+  }
+  .require_block .require_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .require_block .require_list {
+    padding-left: 22px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+  }
+  .require_block .require_list li {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  .require_block .require_list li::before {
+    width: 21px;
+    height: 20px;
+    left: -29px;
+    top: -2px;
+  }
+  .require_block .require_description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  .globe {
+    min-height: 360px;
+  }
+  .globe .world {
+    min-height: 360px;
+    padding: 26px 24px 0 25px;
+  }
+  .globe .world .label_white {
+    width: 112px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  .globe .world .title_white {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 11px;
+    margin-top: 10px;
+  }
+  .globe .world .subtitle_white {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .globe .world .cities {
+    font-size: 15px;
+    line-height: 15px;
+    bottom: 29.5px;
+    width: 200px;
+  }
+  footer {
+    min-height: 254px;
+    padding: 12px 18px 26px 19px;
+  }
+  footer .divider {
+    width: 234px;
+    height: 3px;
+  }
+  footer .footer_wrapper .footer_social_media {
+    margin-top: 16px;
+  }
+  footer .footer_wrapper .footer_links_main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer_wrapper .footer_links_main a {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  footer .footer_wrapper .footer_links_sub a {
+    font-size: 9px;
+    line-height: 11px;
+    margin-top: 10px;
+  }
+  footer .footer_wrapper .footer_links_lang {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  footer .footer_wrapper .footer_mobile {
+    width: 250px;
+    height: 24px;
+  }
+  footer .footer_wrapper .footer_mobile img {
+    width: 82px;
+    height: 24px;
   }
 }/*# sourceMappingURL=style.min.css.map */
