@@ -74,7 +74,7 @@
         min-height: 467px
         .world
             min-height: 463px
-            width: 759px
+            width: 100%
             left: 0
             right: 0
             .title_white
@@ -126,6 +126,7 @@
         top: 50%
         transform: translateY(-50%)
         width: 26px
+        height: 12px
         span
             display: block
             height: 2px
@@ -137,8 +138,172 @@
             span
                 margin-bottom: -2px
                 &:nth-child(1)
-                    transform: rotate(-45deg)
+                    transform: translateY(3px) rotate(-45deg)
                 &:nth-child(2)
                     display: none
                 &:nth-child(3)
-                    transform: rotate(45deg)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 18px
+            font-weight: 400 
+            font-size: 16px 
+            text-transform: uppercase 
+            color: #FFFFFF
+            text-align: center
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 12px
+            width: 138px
+            height: 27px
+        &_logo
+            margin-top: 25px
+    .promo
+        &_header
+            line-height: 45px
+    .promo_second
+        .reasons_block
+            .img_reasons
+                width: 150px
+            .reasons_descr
+                width: 518px
+                .promo_header_desc
+                    font-size: 28px
+                    line-height: 30px
+                    margin-bottom: 5px
+                .promo_second_descr
+                    font-size: 24px
+    .mobile
+        .label
+            width: 186px
+            height: 38px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 17px
+        .title
+            font-size: 29px
+            margin-top: 14px
+        .subtitle
+            font-size: 24px
+            margin-top: 0
+        &_item
+            width: 489px
+            height: 424px
+            margin-bottom: 48px
+            &_subtitle
+                font-size: 28px
+                margin-top: 49px
+            &_plus
+                width: 45px
+                height: 45px
+                &::before
+                    width: 25px
+                    height: 3px
+                &::after
+                    height: 25px
+                    width: 3px
+    .choice
+        min-height: 506px
+        padding: 57px 0 0 0
+        .black
+            height: 538px
+        .label_white
+            width: 186px
+            height: 38px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 17px
+        &_img
+            width: 512px
+        &_descr
+            position: relative
+            font-weight: 300 
+            font-size: 22px 
+            line-height: 40px
+            color: #FFFFFF 
+            z-index: 2
+            margin-top: -30px
+    .require
+        padding: 39px 0 87px 0
+        .label
+            width: 186px
+            height: 38px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 17px
+        .title
+            font-size: 29px
+            margin-top: 14px
+        &_block
+            .require_title
+                font-size: 27px
+            .require_list
+                li
+                    margin-bottom: 12px
+                    font-size: 25px
+                    &:before
+                        left: -50px
+                        top: -4px
+                        width: 35px
+                        height: 34px
+            .require_description
+                font-size: 24px
+                margin-top: 28px
+                margin-bottom: 20px
+    .globe
+        height: 544px
+        .world
+            min-height: 544px
+            width: 100%
+            .label_white
+                width: 186px
+                height: 38px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 17px
+                margin-top: 16px
+            .cities
+                font-size: 22px
+    footer
+        min-height: 320px
+        .divider
+            width: 483px
+            height: 6px
+            margin-top: 13px
+        .footer_wrapper
+            display: flex
+            flex-direction: column
+            margin-top: 20px
+            .footer_links
+                order: 1
+                width: 100%
+                transform: translateX(0%)
+                &_main
+                    a
+                        font-size: 26px
+                &_sub
+                    margin-top: 6px
+                    a
+                        font-size: 18px
+                &_lang
+                    margin-top: 10px
+                    font-size: 19px
+            .footer_social_media
+                order: 2
+                align-self: center
+                margin-top: 15px
+            .footer_mobile
+                order: 3
+                align-self: center
+                margin-top: 24px
+@media (max-width: 575px)
