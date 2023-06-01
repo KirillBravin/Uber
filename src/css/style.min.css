@@ -45,10 +45,11 @@ nav {
 }
 
 .subheader {
-  height: 84px;
+  height: 121px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
+  padding-top: 37px;
 }
 .subheader_logo {
   display: block;
@@ -104,7 +105,7 @@ nav {
 .promo {
   min-height: 800px;
   background: url(../img/uber_bg.png) center center/cover no-repeat;
-  padding: 150px 0 135px 0;
+  padding: 171px 0 135px 0;
 }
 .promo_header {
   font-weight: 900;
@@ -1099,6 +1100,7 @@ footer .footer_wrapper .footer_mobile img {
   .subheader {
     height: 60px;
     top: 30px;
+    padding-top: 0;
   }
   .subheader_logo {
     margin-top: 16px;
@@ -1114,6 +1116,10 @@ footer .footer_wrapper .footer_mobile img {
     height: 22px;
     font-size: 10px;
     margin-top: 6px;
+  }
+  .subheader_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
   }
   .promo {
     min-height: 400px;
@@ -1139,8 +1145,17 @@ footer .footer_wrapper .footer_mobile img {
     margin-top: 72px;
     font-size: 16px;
   }
+  .promo_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
+  }
   .menu {
     width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
   }
   .promo_second {
     padding: 22px 0 36px 0;
